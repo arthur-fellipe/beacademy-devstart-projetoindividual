@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('processes', function (Blueprint $table) {
             $table->id();
-            $table->string('process_number', 20)->unique();
-            $table->string('client', 255);
+            $table->string('process_number', 25)->unique();
+            $table->string('lawyer', 255);
             $table->string('claimant', 255);
             $table->string('defendant', 255)->nullable();
             $table->string('court', 255)->nullable();
@@ -36,6 +36,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cases');
+        Schema::dropIfExists('processes');
     }
 };

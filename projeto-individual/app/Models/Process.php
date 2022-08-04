@@ -11,7 +11,7 @@ class Process extends Model
 
     protected $fillable = [
         'process_number',
-        'client',
+        'lawyer',
         'claimant',
         'defendant',
         'court',

@@ -10,16 +10,7 @@
 </head>
 
 <body>
-    <div class="container w-50 p-3">
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link text-white" href="/users">Processos</a>
-                </li>
-                </ul>
-            </div>
-        </nav>
+    <div class="container w-90 p-3">
         @yield('body')
     </div>
 </body>

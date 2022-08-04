@@ -17,8 +17,8 @@ class ProcessFactory extends Factory
     public function definition()
     {
         return [
-            'process_number'=> $this->faker->numerify('#######-##.####.#.##.####'),
-            'client'=> $this->faker->name(),
+            'process_number'=> $this->faker->numerify('####################'),
+            'lawyer'=> $this->faker->name(),
             'claimant'=> $this->faker->name(),
             'defendant'=> $this->faker->name(),
             'court'=> $this->faker->stateAbbr(),
